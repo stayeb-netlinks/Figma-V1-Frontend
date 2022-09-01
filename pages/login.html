@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="public/css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Login: micro1.</title>
+  </head>
+  <body class="bg-black">
+    <main class="px-10 md:px-20 my-10 container m-auto">
+      <!-- Navbar -->
+      <nav id="navbar" class="w-full flex justify-between items-center">
+        <div class="flex items-center gap-11">
+          <a href="/">
+            <h1 class="font-semibold text-white text-xl">micro1.</h1>
+          </a>
+          <ul class="hidden md:flex font-normal text-lg gap-11">
+            <li class="cursor-pointer text-gray-400 font-normal">
+              How we hire
+            </li>
+            <li class="cursor-pointer text-gray-400 font-normal">Pricing</li>
+            <li class="cursor-pointer text-gray-400 font-normal">
+              How it works
+            </li>
+          </ul>
+        </div>
+        <ul class="flex items-center gap-11">
+          <li class="hidden md:block cursor-pointer text-gray-400">
+            <a href="/register.html"> Apply as a developer </a>
+          </li>
+          <li>
+            <button class="btn-primary">Hire Top Talent</button>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of Navbar -->
+
+      <!-- Login -->
+      <section class="flex flex-col text-white h-screen">
+        <div class="h-16"></div>
+        <!-- The Heading -->
+        <div class="mb-16 flex flex-col items-center">
+          <h2 class="font-bold text-5xl mb-6">Login to Your Account</h2>
+          <p class="text-gray-600 w-2/3 text-center font-semibold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            facere accusantium debitis maxime ab optio similique eligendi illum
+            blanditiis assumenda.
+          </p>
+        </div>
+        <!-- Form -->
+        <div class="grid grid-cols-1 gap-24 md:grid-cols-2">
+          <!-- inputs -->
+          <div class="flex flex-col">
+            <div class="input-container">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-input"
+                placeholder="Email/Username"
+              />
+              <img
+                src="./src/assets/images/icons/email.png"
+                alt="email"
+                srcset=""
+                class="w-9"
+              />
+            </div>
+            <div class="input-container">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-input"
+                placeholder="Your password"
+              />
+              <img
+                src="./src/assets/images/icons/hide.png"
+                alt="email"
+                srcset=""
+                class="w-9"
+              />
+            </div>
+            <button
+              class="flex flex-row-reverse justify-between items-center text-xl md:text-xl bg-gradient-to-r from-blue-400 to-green-500 px-5 py-5 rounded-sm focus:outline-none"
+            >
+              <img
+                src="./src/assets/images/icons/arrow.png"
+                alt="email"
+                srcset=""
+                class="w-9"
+              />
+              <p class="font-bold">Login to Your Account</p>
+            </button>
+          </div>
+          <!-- social Login -->
+          <div class="flex flex-col order-first md:order-none">
+            <div class="social-btn-container">
+              <button class="social-btn">Sign with Google</button>
+              <img
+                src="./src/assets/images/icons/google.png"
+                alt="google"
+                srcset=""
+                class="w-9"
+              />
+            </div>
+            <div class="social-btn-container">
+              <button class="social-btn">Sign with Facebook</button>
+              <img
+                src="./src/assets/images/icons/facebook.png"
+                alt="google"
+                srcset=""
+                class="w-9"
+              />
+            </div>
+            <div class="social-btn-container">
+              <button class="social-btn">Sign with Github</button>
+              <img
+                src="./src/assets/images/icons/github.png"
+                alt="google"
+                srcset=""
+                class="w-9"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Login -->
+
+      <!-- The Footer -->
+      <section
+        class="flex justify-between items-center text-gray-500 mt-10 md:mt:0"
+      >
+        <p>Privacy Policy</p>
+        <p>Copyright@mico1. 2022</p>
+      </section>
+      <!-- End of the footer -->
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="src/index.js" type="module"></script>
+    <script>
+      AOS.init({ duration: 2000 });
+    </script>
+  </body>
+</html>

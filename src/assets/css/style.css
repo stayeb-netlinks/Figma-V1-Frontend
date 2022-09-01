@@ -1,0 +1,35 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); */
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply text-black bg-slate-100 py-4 px-6 rounded-full;
+  }
+
+  .social-btn-container {
+    @apply border border-light-dark-100 mb-5 flex flex-row-reverse items-center justify-end px-5 rounded-sm;
+  }
+
+  .social-btn {
+    @apply py-6 rounded-sm font-semibold mx-4 text-gray-300;
+  }
+
+  .input-container {
+    @apply bg-light-dark-100 mb-5 flex items-center justify-between px-5;
+  }
+
+  .form-input {
+    @apply bg-transparent rounded-sm placeholder:text-gray-400 py-6 flex-1 focus:outline-none;
+  }
+}
+
+body {
+  /* background-color: var(--bg-gray); */
+  /* background-color: rgb(222, 228, 233); */
+  /* font-family: Poppins; */
+  font-family: "satoshi", sans-serif;
+}
